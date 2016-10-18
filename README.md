@@ -1,5 +1,5 @@
 # neun
-A text editor
+A text editor :->
 functions :
   save,
   open,
