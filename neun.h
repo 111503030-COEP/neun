@@ -6,7 +6,7 @@
 
 #define CTRL_A 1
 #define CTRL_B 2
-#define CTRL_C 3 // to close the program
+#define CTRL_C 3 // close the program
 #define CTRL_D 4
 #define CTRL_E 5
 #define CTRL_F 6
@@ -39,10 +39,9 @@
 #define END 360
 #define INSERT 331
 
-
 typedef struct line {
 	char *str;
-	int pos, chars;
+	int chars;
 	struct line *next, *prev;
 } line;
 
@@ -55,3 +54,17 @@ typedef struct position {
 	int x, y;
 } position;
 
+void any_screen();
+line *key_up(file *fptr);
+line *key_down(file *fptr);
+line *key_left(file *fptr);
+line *key_right(file *fptr);
+void homepage();
+void delete_char(line *present);
+void enter_char(line *present, int pos);
+line *insert_line(file *fptr);
+int new_line(file *fptr, char *str);
+line *other_keys(int ch, file *fptr);
+void save(file *fptr, char *fname);
+void editor(char *fname);
+void set_max();
