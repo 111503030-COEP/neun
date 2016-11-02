@@ -1,0 +1,15 @@
+Neun - A Text Editor
+
+Kajal Sanklecha - 111503030
+(SY Computer)
+
+Neun is a text editor made by Kajal Sanklecha, using ncurses library.
+It is small basic text editor for the ease of the user to edit efficiently.
+There is a file named "Sample.txt"(as the name suggests).
+It performs the following functions :->
+- Takes name of a file as the command line argument and if not given there asks for it later.
+- Has help option using CTRL+H key to help you with the commands allowed in it.
+- Supports arrow keys for navigation.
+- Supports backspace and delete keys for efficient editing of your text.
+- Has a RAM interface where the file gets edited before being saved in a file in the machine's secondary memory.
+- More features yet to come in the upcoming updates...
